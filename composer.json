@@ -1,0 +1,20 @@
+{
+    "name": "ezzaro14/magento2-dashboard",
+    "description": "Adds a Yesterday period and defaults to the revenue chart on the Magento 2 Admin dashboard.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
+        "magento/framework": "*",
+        "magento/module-backend": "*",
+        "magento/module-reports": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ezzar\\Dashboard\\": ""
+        }
+    }
+}

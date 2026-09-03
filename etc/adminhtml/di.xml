@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Backend\Model\Dashboard\Period">
+        <plugin name="ezzar_dashboard_add_yesterday_period"
+                type="Ezzar\Dashboard\Plugin\Backend\Model\Dashboard\PeriodPlugin"/>
+    </type>
+
+    <type name="Magento\Backend\Block\Widget\Tabs">
+        <plugin name="ezzar_dashboard_default_to_amounts_tab"
+                type="Ezzar\Dashboard\Plugin\Backend\Block\Widget\TabsPlugin"/>
+    </type>
+
+    <preference for="Magento\Reports\Model\ResourceModel\Order\Collection"
+                type="Ezzar\Dashboard\Model\ResourceModel\Order\Collection"/>
+</config>
